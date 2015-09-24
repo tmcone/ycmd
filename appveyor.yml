@@ -2,16 +2,6 @@ version: '{build}'
 environment:
   USE_CLANG_COMPLETER: true
   matrix:
-  - msvc: 11
-    arch: 32
-  - msvc: 11
-    arch: 64
-  - msvc: 12
-    arch: 32
-  - msvc: 12
-    arch: 64
-  - msvc: 14
-    arch: 32
   - msvc: 14
     arch: 64
 install:
@@ -23,6 +13,6 @@ install:
   - pip install -r test_requirements.txt
   - npm install -g typescript
 build_script:
-  - python run_tests.py --msvc %MSVC%
+  - python build.py --msvc %MSVC%
 # Disable automatic tests
 test: off
