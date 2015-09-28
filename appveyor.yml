@@ -12,8 +12,10 @@ install:
   - python C:\get-pip.py
 build_script:
   - python build.py --clang-completer --omnisharp-completer --msvc %MSVC%
+after_build:
+  - 7z a myapp.zip %APPVEYOR_BUILD_FOLDER%
 artifacts:
-  - path: '*'
+  - path: myapp.zip
     name: Release
 # Disable automatic tests
 test: off
