@@ -13,7 +13,7 @@ install:
 build_script:
   - python build.py --clang-completer --omnisharp-completer --msvc %MSVC%
 artifacts:
-  - path: '**'
+  - path: '*'
     name: Release
 # Disable automatic tests
 test: off
