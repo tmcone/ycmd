@@ -11,9 +11,9 @@ install:
   - ps: (new-object net.webclient).DownloadFile('https://raw.github.com/pypa/pip/master/contrib/get-pip.py', 'C:\get-pip.py')
   - python C:\get-pip.py
 build_script:
-  - python build.py --msvc %MSVC%
+  - python build.py --clang-completer --omnisharp-completer --msvc %MSVC%
 artifacts:
-  -path:Release
-  name:Release
+  - path: ycmd\*
+    name: Release
 # Disable automatic tests
 test: off
