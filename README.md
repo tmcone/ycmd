@@ -2,7 +2,7 @@ ycmd: a code-completion & comprehension server
 ==============================================
 
 [![Build Status](https://travis-ci.org/Valloric/ycmd.svg?branch=master)](https://travis-ci.org/Valloric/ycmd)
-[![Build status](https://ci.appveyor.com/api/projects/status/6fetp5xwb0kkuv2w/branch/master?svg=true)](https://ci.appveyor.com/project/Valloric/ycmd)
+[![Build status](https://ci.appveyor.com/api/projects/status/r05k740xphdmpt2e/branch/master?svg=true)](https://ci.appveyor.com/project/tmcone/ycmd/branch/master)
 
 ycmd is a server that provides APIs for code-completion and other
 code-comprehension use-cases like semantic GoTo commands (and others). For
